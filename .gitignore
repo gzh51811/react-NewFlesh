@@ -5,8 +5,8 @@
 /.pnp
 .pnp.js
 
-package-lock.json
-package.json
+/package-lock.json
+/package.json
 /src/static/image
 
 # testing
