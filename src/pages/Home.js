@@ -18,31 +18,35 @@ class Home extends Component{
                     text:'首页',
                     name:'Home_main',
                     path:'/home/main',
-                    icon:'home'
+                    src: require('../static/image/home.png'),
+                    src2: require('../static/image/home-active.png')
                 },{
                     text:'分类',
                     name:'Home_categroy',
                     path:'/home/categroy',
-                    icon:'bars'
+                    src:require('../static/image/categroy.png'),
+                    src2:require('../static/image/categroy-active.png')
                 },{
                     text:'发现',
                     name:'Home_news',
                     path:'/home/news',
-                    icon:'shopping'
+                    src:require('../static/image/news.png'),
+                    src2:require('../static/image/news-active.png')
                 },{
                     text:'购物车',
                     name:'Home_cart',
                     path:'/home/cart',
-                    icon:'shopping-cart'
+                    src:require('../static/image/cart.png'),
+                    src2:require('../static/image/cart-active.png')
                 },
                 {
                     text:'我的',
                     name:'Home_mine',
                     path:'/home/mine',
-                    icon:'shopping-cart'
+                    src:require('../static/image/mine.png'),
+                    src2:require('../static/image/mine-active.png')
                 }
-            ],
-            current:'Home'
+            ]
         }
         // console.log(this);
     }
@@ -59,7 +63,13 @@ class Home extends Component{
             </Switch>
             <div className="home_navs">
                 {
-                    this.state.navs.map(item=><Link to={item.path} key={item.text}>{item.text}</Link>)
+                    this.state.navs.map(item=><NavLink activeStyle={{color:'#ff4891'}} to={item.path} key={item.text}>
+                    {
+                        this.props.location.pathname === item.path ? <img src={item.src2} alt=""/> : <img src={item.src} alt=""/>   
+                    }
+                        {/* <img src={item[this.state.current]} alt=""/> */}
+                        <p>{item.text}</p>
+                        </NavLink>)
                 }
             </div>
         </div>
