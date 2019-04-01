@@ -1,9 +1,18 @@
 .home_navs{
-    height: 60px;
+    height: 1.333333rem;
     background: lavender;
     display: flex;
-
+    background-color: rgba(247, 247, 250, 0.95);
 }
-.home_navs div{
+.home_navs a{
+    display: flex;
     width: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.home_navs a img{
+    width: .64rem;
+    height: .64rem;
 }
