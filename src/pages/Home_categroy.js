@@ -12,21 +12,29 @@ class Home_categroy extends Component {
     render() {
         return <div className="home_categroy" style={{ flex: 1 }}>
             {/* <List> */}
+            <div className="home_header">
+                <img src={require("../static/image/icon_img.png")} alt="" />
+                <a href="javascript:;">
+                    <img src={require('../static/image/search.png')} alt="" />
+                    <p className="sosuo">搜索</p>
+                </a>
+            </div>
+
             <Tabs type="card" tabPosition="left" tabBarGutter={0} >
                 <TabPane tab="热卖" key="1" >
-                    <div>
-                        <p className="category-title" >今日秒杀</p>
-                    </div>
+
+                    {/* <p className="category-title" >今日秒杀</p> */}
+
                     <p className="line"></p>
                     <div className="goodslist">
                         {/* <ul className="somelist" > */}
                         <div className="somelist" >
-                            <li className="product-img-wrap">
+                            <div className="product-img-wrap">
                                 <img src="https://image.missfresh.cn/4b498fa810f74696986f4b0434458258.jpg?iopcmd=convert&dst=webp" className="product-img"></img>
                                 <div className="product-promote-tag" >
                                     限每人2份
                                     </div>
-                            </li>
+                            </div>
                         </div>
                         {/* <li></li> */}
                         {/* <li></li> */}
