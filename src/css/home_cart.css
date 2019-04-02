@@ -1,0 +1,58 @@
+.home_cart {}
+
+
+
+
+
+/* cart购物车 */
+body .allcheck {
+    position: relative;
+    left: 15px;
+    top: 40%;
+    height: 30px;
+
+
+}
+
+body .allcheck span:nth-child(2) {
+    margin: 0 20px;
+    font-size: 16px;
+    line-height: 30px;
+
+
+}
+
+
+
+body .zent-checkbox-group .zent-checkbox {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    width: 20px;
+}
+
+body .zent-checkbox-inner {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+}
+
+body .zent-checkbox-group label {
+    margin: 0;
+}
+
+body .zent-checkbox-inner::after {
+    width: 14px;
+    height: 7px;
+    left: 3px;
+}
+
+
+body .zent-checkbox-indeterminate>.zent-checkbox>.zent-checkbox-inner::after {
+    width: 14px;
+    height: 3px;
+    left: 4px;
+    top: 45%;
+
+}
