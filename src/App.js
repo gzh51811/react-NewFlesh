@@ -5,6 +5,7 @@ import './App.css';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Search from './pages/Search';
 import { Route, Redirect, Switch, Link, NavLink, withRouter } from 'react-router-dom';
 
 // import './static/js/rem';
@@ -15,6 +16,7 @@ class App extends Component {
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/login" component={Login} />
+          <Route path="/search" component={Search} />
           <Redirect to='/home' />
         </Switch>
       </div>
