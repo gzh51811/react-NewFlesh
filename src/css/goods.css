@@ -13,8 +13,6 @@
     line-height: 1.173333rem;
     width: 1.9rem;
     height: 100%;
-    /* border-bottom-color: #ff4891; */
-    /* border-bottom: 0.1875rem solid transparent; */
     position: absolute;
     border-bottom: #ff4891 solid 0.1055rem;
     left: 5rem;
@@ -50,9 +48,6 @@
   position: absolute;
   color: #474245;
    font-size: .43rem;
-
-
-
 }
 .product-item-price .down-area{
     position: absolute;
@@ -108,8 +103,8 @@
 }
 .safe-container{
     background-color: #f8f8f8;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
+    padding-top: 0.325rem;
+    padding-bottom: 0.325rem;
 }
 
     

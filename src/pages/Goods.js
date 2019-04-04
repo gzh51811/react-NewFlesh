@@ -9,7 +9,7 @@ class Goods extends Component {
             <div className="detailsTitle">
                 <div className="spxq">商品详情</div>
             </div>
-            {/* 内容          */}
+            {/* 内容 */}
             <div className="product-describe">
                 <p className="subtitle-text">凹凸间隙中满满都是质感</p>
                 <p className="sub-title">【6包】维达棉韧压花抽纸110抽</p>
@@ -34,8 +34,20 @@ class Goods extends Component {
                 </div>
                 <p className="share-count">已经有9810人分享了该商品</p>
             </div>
-            <div className="safe-container"> </div>
+            <div className="safe-container">
+                <div className="product-safe-area">
+                    <div className="security-tit">
+                        <span className="security-tit-title">安心指纹</span>
+                        <span className="security-tit-see">点击查看&gt;</span>
+                    </div>
+                    <div className="security-box">
 
+
+                    </div>
+                </div>
+
+            </div>
+            {/* 加入购物车 */}
             <div className="product-bar-footer-container">
                 <div className="image-spot-containerproduct-image-spot">
                     <Icon className="icon-cart" type="shopping-cart" style={{ fontSize: '32px' }} />
