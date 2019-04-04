@@ -1,7 +1,9 @@
 .home_main {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
+    width: 100%;
+    // display: flex;
+    // flex: 1;
+    // flex-direction: column;
+    overflow: auto;
 }
 
 .home_main .home_header {
@@ -91,10 +93,88 @@
         .cartbtnimg {
             position: absolute;
             bottom: 0;
-            right: 20px;
-            width: 45px;
+            right: 0.5333rem;
+            width: 1.2rem;
 
         }
+    }
+
+    // 小标题
+    .minnav {
+        width: 100%;
+        ul{
+            
+            li{
+                float: left;
+            }
+        }
+    }
+
+  
+
+
+
+    .recommend-title {
+        padding: 0 0.8rem;
+        margin-bottom: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .recommend-text {
+            img {
+                width: 0.5333rem;
+                position: relative;
+                top: 0.15rem;
+            }
+
+            em {
+
+                font-size: 0.32rem;
+            }
+        }
+    }
+
+    // 导航
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.2667rem 0.5333rem 0;
+
+        .lantern-item {
+            width: 17%;
+
+            .lantern-item-img {
+                text-align: center;
+
+                .item-img {
+                    width: 1rem;
+                }
+            }
+
+            p {
+                color: #474245;
+                font-size: 0.15rem;
+                text-align: center;
+            }
+        }
+
+    }
+
+
+
+    .card-wrap {
+        width: 100%;
+        margin: 0.3667rem 0;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 45%;
+            height: 2.6667rem;
+            margin: 0 0.1333rem;
+        }
+
     }
 
 }
