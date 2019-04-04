@@ -26,5 +26,5 @@ class Home_main extends Component {
     }
 }
 
-Home_main = withRouter(Home_main)
+// Home_main = withRouter(Home_main)
 export default Home_main;
