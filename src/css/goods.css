@@ -1,0 +1,147 @@
+.Goods .detailsTitle{
+    height: 1.173333rem;
+    /* background: red; */
+    /* text-align: center; */
+    line-height: 1.173333rem;
+    font-size: .466667rem;
+    color: #ff4891;
+    font-weight: 700;
+    position: relative;
+    box-shadow:0px 8px 18px -15px #ccc;
+}
+.detailsTitle .spxq{
+    line-height: 1.173333rem;
+    width: 1.9rem;
+    height: 100%;
+    /* border-bottom-color: #ff4891; */
+    /* border-bottom: 0.1875rem solid transparent; */
+    position: absolute;
+    border-bottom: #ff4891 solid 0.1055rem;
+    left: 5rem;
+    margin-left: -1.1664rem;
+}
+/* 内容 */
+.product-describe .subtitle-text{
+    font-size: .485rem;
+    color: #474245;
+    font-weight: 700;
+}
+.product-describe{
+    padding-left: 0.375rem;
+    padding-top: 0.475rem;
+    padding-right: 0.375rem;
+    box-sizing: border-box;
+    /* background: #fff; */
+}  
+.product-describe .sub-title{
+    font-size: .4285rem;
+    color: #474245;
+    padding-bottom: 0.275rem;
+    padding-top: 0.125rem;
+    
+}
+.product-describe .product-item-price {
+    position: relative;
+    /* display: flex; */
+    height: 1.013333rem;
+}
+.product-item-price .left-price{
+  
+  position: absolute;
+  color: #474245;
+   font-size: .43rem;
+
+
+
+}
+.product-item-price .down-area{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #474245;
+    font-size: .36rem;
+}
+.product-describe .product-attrs{
+    margin-top: 0.3575rem;
+    padding: 0.34rem 0;
+    border-top:solid .010333rem #ccc;
+    color: #262626;
+    font-size:.16rem; 
+}
+.product-share-info{
+    margin-bottom: 0.4375rem;
+    background: #fff;
+}
+.product-share-info .product-redpack{
+    background: url(../static/image//product-share-redpacket.e34d940.png);
+    background-size: 100% 100%;
+    border-radius: 0.1875rem;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.675rem 0.4375rem;
+    width: 100%;
+    height: 1.76rem;
+    /* line-height:1.76rem;  */
+    font-size: .39rem;
+    color: #ff4891;
+}
+.product-share-info .product-redpack-img{
+    height: .5rem;
+    margin-left: 0.3375rem;
+    
+}
+.product-share-info .product-redpack i{
+    display: inline-block;
+    width: .565rem;
+    height: .565rem;
+    background: url(../static/image/integral-help-ins.1e2a6de.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    position: relative;
+    top: -0.0625rem;
+    left: -.48rem;
+}
+.product-share-info .share-count{
+    font-size: 0.345rem;
+    color: #969696;
+    margin-left: .905rem;
+}
+.safe-container{
+    background-color: #f8f8f8;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+    
+
+/* 加入购物车 */
+.product-bar-footer-container{
+    width: 100%;
+    height: 1.226667rem;
+    display: flex;
+    z-index: 4;
+    font-size: 0.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 -0.0625rem 0.0625rem #e5e5e5;
+}
+.image-spot-containerproduct-image-spot{
+    background: #fff;
+    flex: 1;
+    text-align: center;
+    line-height:  1.226667rem;
+}
+.shopping-cart{
+    width: 1.573333rem;
+    flex: 4;
+    background: #ff4891;
+    color: #fff;
+    text-align: center;
+    line-height:1.226667rem;
+}
+.icon-cart{
+    line-height: 1.326667rem;
+}
