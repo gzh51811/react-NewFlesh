@@ -1,0 +1,155 @@
+.home_mine {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    height: 1000px;
+    flex-direction: column;
+    overflow: auto;
+
+
+    .header {
+        width: 100%;
+        height: 300px;
+        background-image: url('../img/cartbg.png');
+        position: relative;
+
+        .btnlogin {
+            border: 0.0625rem solid #ff4891;
+            width: 3.25rem;
+            height: 1.4rem;
+            border-radius: 0.2rem;
+            color: #ff4891;
+            // background: #fff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            text-align: center;
+            line-height: 1.4rem;
+        }
+    }
+
+
+    .nav {
+        width: 100%;
+        display: flex;
+
+        .ant-row {
+            margin: 0.3125rem 0;
+            width: 100%;
+
+            .clo {
+                width: 25%;
+                text-align: center;
+                line-height: 0.125rem;
+
+                p {
+                    line-height: 0.5625rem;
+                    margin: 0;
+
+                }
+            }
+        }
+    }
+
+    .member {
+        padding: 10px;
+
+        .plus {
+            margin: .15rem 0 0;
+
+            .qyi {
+                font-size: .45rem;
+            }
+
+            .ktmember {
+                float: right;
+                right: 15px;
+                line-height: 27px;
+            }
+        }
+
+        .plus-money {
+            margin: 0;
+
+            .pink {
+                color: #ff4891;
+            }
+        }
+    }
+
+    .plus-items {
+        width: 100%;
+        display: flex;
+
+
+
+        .ant-row {
+            margin: 0;
+            width: 100%;
+
+
+            .clo {
+                width: 25%;
+                text-align: center;
+                overflow: hidden;
+
+                img {
+                    width: 1.5rem;
+                }
+
+                p {
+                    height: .7rem;
+                    margin: 0;
+
+                }
+            }
+
+
+        }
+
+    }
+
+    // 轮播
+    .activitiesp {
+        width: 100%;
+        overflow: auto;
+        height: 220px;
+
+        position: relative;
+        z-index: 9;
+
+        .activities-list {
+            width: 800px;
+            display: flex;
+            -webkit-flex-wrap: nowrap;
+            overflow: auto;
+            padding-left: 8px;
+
+            .activities-item {
+                margin-right: 0.2133rem;
+                width: 10.6667rem;
+                height: 4.2533rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .minelist {
+        margin-top: 1rem;
+
+        .minelist_item {
+            padding: 10px 15px 25px;
+            margin: 0 0.05rem;
+            height: .2rem;
+            border-bottom: 0.0625rem solid #f0f0f0;
+            color: #262626;
+            font-size: 0.1rem;
+        }
+    }
+}

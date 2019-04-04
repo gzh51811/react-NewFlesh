@@ -1,19 +1,28 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 
-import '../css/home_main.css';
+import '../css/home_main.scss';
 
-class Home_main extends Component{
-    render(){
-        return <div className="home_main">
+import Home_main_goodslist from '../component/home_main/Home_main_goodslist.js'
+class Home_main extends Component {
+    render() {
+        return (
+        <div className="home_main">
             <div className="home_header">
-                <img src={require("../static/image/icon_img.png")} alt=""/>
+                <img src={require("../static/image/icon_img.png")} alt="" />
                 <a href="javascript:;">
-                    <img src={require('../static/image/search.png')} alt=""/>
+                    <img src={require('../static/image/search.png')} alt="" />
                     <p>搜索</p>
                 </a>
             </div>
-            
-        </div>
+
+            <nav>
+
+            </nav>
+
+         
+                <Home_main_goodslist></Home_main_goodslist>
+          
+        </div>)
     }
 }
 

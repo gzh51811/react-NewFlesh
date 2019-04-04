@@ -1,10 +1,11 @@
-.home_navs{
+.home_navs {
     height: 1.333333rem;
-    background: lavender;
+    background: #fff;
     display: flex;
     background-color: rgba(247, 247, 250, 0.95);
 }
-.home_navs a{
+
+.home_navs a {
     display: flex;
     width: 20%;
     flex-direction: column;
@@ -12,10 +13,20 @@
     align-items: center;
     color: #999;
 }
-.home_navs a img{
+
+/* .home_navs div {
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+} */
+
+.home_navs a img {
     width: .64rem;
     height: .64rem;
 }
-p{
+
+p {
     margin: 0;
 }

@@ -1,0 +1,177 @@
+.home_cart {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: auto;
+    padding-bottom: 2rem;
+
+
+    .cart_recommet {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+
+        .cart_recommet_item {
+            text-align: center;
+            width: 45%;
+            border-radius: 0.4rem;
+            margin: .15rem;
+            background: #fff;
+            position: relative;
+        }
+
+        .item1,
+        .item2 {
+            padding: 0 0.325rem;
+            margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: .313333rem;
+            color: #333
+        }
+
+        .item2 {
+            color: #999;
+        }
+    }
+
+
+    // 购物车
+    .cartlkist {
+        width: 100%;
+
+
+
+    }
+
+    .checkGroup {
+        width: 100%;
+
+        .checkitemli {
+
+            width: 100%;
+            padding: 0 .333333rem;
+            background: #fff;
+            margin: .233333rem 0;
+            position: relative;
+
+            .zent-checkbox-wrap {
+                width: 100%;
+                margin: 0;
+                padding-left: 1rem;
+
+
+                .imgs {
+                    width: 3.125rem;
+
+                }
+
+                .conter {
+                    padding: 0.325rem 0;
+                    width: 58%;
+                    float: right;
+                    height: 100%;
+
+                    .p1,
+                    .p2 {
+
+
+                        margin: 0;
+                        color: #333;
+                        font-size: 0.4rem;
+                        margin: .083333rem 0;
+                        line-height: .6rem;
+                    }
+
+                    .p2 {
+                        color: #999;
+                        font-size: 0.2rem;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+
+                    .price {
+                        margin: .366667rem 0 0;
+                        font-size: .453rem;
+                    }
+                }
+            }
+
+            .inputnumber {
+                width: 1.5rem;
+                position: absolute;
+                right: .666667rem;
+                bottom: .45rem;
+            }
+
+
+
+            .zent-checkbox {
+                position: absolute;
+                left: .5rem;
+                top: 1.8rem;
+            }
+        }
+
+    }
+
+    .zent-checkbox-inner {
+
+        width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+
+    }
+
+
+    .allprice {
+        margin-top: 0.1rem;
+        background: #fff;
+        color: #333;
+        font-size: 0.375rem;
+
+        p {
+            margin: 0 0.3125rem;
+            padding: 0.3rem 0;
+            border-bottom: 0.0625rem solid #eee;
+
+            i {
+                float: right;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+
+
+
+body .cartbtnimg {
+    position: absolute;
+    bottom: 0;
+    right: 0.2667rem;
+    width: 0.6667rem;
+
+}
+
+// 选择是的打勾
+body .zent-checkbox-inner::after {
+    width: 10px;
+    height: 5px;
+    left: 3px;
+}
+
+// 选择是的打勾
+body .zent-checkbox-indeterminate>.zent-checkbox>.zent-checkbox-inner::after {
+    width: 10px;
+    height: 3px;
+    left: 2.8px;
+    top: 45%;
+
+}

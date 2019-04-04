@@ -5,6 +5,10 @@ import './App.css';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
+
+import 'antd/dist/antd.css';
+
+
 import { Route, Redirect, Switch, Link, NavLink, withRouter } from 'react-router-dom';
 
 // import './static/js/rem';
