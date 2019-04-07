@@ -16,7 +16,7 @@ function Home_main_goodslist() {
                     </div>
                 </div>
             </div>
-            <img className="cartbtnimg" src={[require('../../static/image/cart1.png')]} />
+            <img className="cartbtnimg" src={[require('../../img/cart1.png')]} />
         </div>
 
     )

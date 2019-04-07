@@ -32,7 +32,7 @@ export class Home_cart_recommend extends Component {
 
                     <div style={{ overflow: 'hidden', padding: '0.2333rem 0.48rem' }}>
                         <span style={{ lineHeight: '0.2333rem', fontSize: "0.4rem", color: 'red', float: 'left' }}>价格：99.00</span>
-                        <img className="cartbtnimg" src={[require('../../static/image/cart1.png')]} />
+                        <img className="cartbtnimg" src={[require('../../img/cart1.png')]} />
                     </div>
                 </div>
 
@@ -98,4 +98,4 @@ const mapDispatchToProps = {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home_cart_recommend)
+export default connect(mapStateToProps, mapDispatchToProps, Home_cart_recommend)

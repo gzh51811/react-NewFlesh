@@ -82,6 +82,6 @@ const mapDispatchToProps = {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home_cart)
+export default connect(mapStateToProps, mapDispatchToProps, Home_cart)
 
 

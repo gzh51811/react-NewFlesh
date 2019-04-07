@@ -20,7 +20,7 @@ class Home_news extends Component {
     render() {
         return (
             <div className="Home_news">
-                <nav class='news_nav'>
+                <nav className='news_nav'>
                     <Menu
                         style={{ margin: '10px 0' }}
                         onClick={this.handleClick}
