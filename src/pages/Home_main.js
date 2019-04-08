@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 
+// import { Checkbox } from 'zent'
+// import 'zent/css/index.css'
+
 import '../css/home_main.scss';
 
-import Home_main_goodslist from '../component/home_main/Home_main_goodslist.js'
+// import Home_main_goodslist from '../component/home_main/Home_main_goodslist.js'
+import Home_tab from '../component/home_main/Home_tab.js'
 class Home_main extends Component {
     render() {
         return (
@@ -16,11 +20,11 @@ class Home_main extends Component {
                 </div>
 
                 <nav>
-
+                    <Home_tab> </Home_tab>
                 </nav>
 
 
-                <Home_main_goodslist></Home_main_goodslist>
+                {/* <Home_main_goodslist></Home_main_goodslist> */}
 
             </div>)
     }

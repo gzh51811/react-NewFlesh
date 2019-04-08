@@ -23,6 +23,7 @@ class Home_categroy extends Component {
             {/* <div className=""> */}
             <Tabs className="mytabs" type="card" tabPosition="left" tabBarGutter={0} >
                 <TabPane tab="热卖" key="1" >
+
                     <Hot></Hot>
                 </TabPane>
                 <TabPane tab="会员精选" key="2" >
