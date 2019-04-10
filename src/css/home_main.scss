@@ -12,6 +12,7 @@
     align-items: center;
     padding: 0 .426667rem;
     box-sizing: border-box;
+    margin: .133333rem 0;
 }
 
 .home_main .home_header>img {
@@ -59,7 +60,7 @@
 
         .conter {
             padding: 0.325rem 0;
-            width: 58%;
+            width: 59%;
             float: right;
             height: 100%;
 
@@ -97,4 +98,18 @@
         }
     }
 
+}
+.box1{
+    position: relative;
+}
+.product-ctrl1{
+    width: .8rem;
+    height:.8rem;
+    position: absolute;
+    top: 2rem;
+    left: 7.8rem;
+}
+.product-addcart-img1{
+    width: .8rem;
+    height: .8rem;
 }

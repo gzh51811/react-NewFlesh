@@ -1,37 +1,88 @@
 import React, { Component } from 'react';
 import '../css/goods.css';
 import { Icon, Carousel } from 'antd';
-
+import withAxios from '../hoc/withAxios';
 
 class Goods extends Component {
+    // console.log('22', props)
+    constructor() {
+        super();
+        // console.log(porps);
+
+        this.state = {
+            datalist: []
+        }
+        // console.log('22', this)
+        // this.gotoGoods = this.gotoGoods.bind(this);
+    }
+    async componentDidMount(props) {
+        // 使用axios
+        // console.log('22', this.props)
+        let id = this.props.location.search.slice(4);
+        // console.log(id);
+        let { data } = await this.props.axios.get('/goodslist/details', {
+            params: {
+                _id: id
+                // catagory: '酒饮',
+                // act: 'goods',
+                // op: 'goods_list',
+                // keyword: '',
+                // page: 10,
+                // curpage: 1,
+                // limit: 5
+            }
+        });
+
+        // console.log(data.data);
+
+
+        this.setState({
+            datalist: data.data
+        });
+
+
+    }
     render() {
         return (<div className="Goods" style={{ flex: 1 }}>
             <div className="detailsTitle">
                 <div className="spxq">商品详情</div>
             </div>
             {/* 内容 */}
-            <div className="product-img-container">
-                <Carousel autoplay>
-                    <div><h3>1</h3></div>
-                    <div><h3>2</h3></div>
-                    <div><h3>3</h3></div>
-                </Carousel>,
+            <div className="Goodsnew">
+                {
+                    this.state.datalist.map(goods => {
+                        return (
+                            <div key={goods._id}>
+                                <div className="product-img-container">
+                                    <Carousel autoplay>
+                                        <div><h3><img src={require(`../img/imgages/${goods.image}`)} className="product-img"></img></h3></div>
+                                        <div><h3><img src={require(`../img/imgages/${goods.image}`)} className="product-img"></img></h3></div>
+
+                                    </Carousel>
+                                </div>
+                                <div className="product-describe">
+                                    <p className="subtitle-text">{goods.name}</p>
+                                    <p className="sub-title">{goods.subtitle}</p>
+                                    <div className="product-item-price">
+                                        <div className="price-left">
+                                            <p className="up-price" style={{ color: '#ff4891' }}>￥{goods.price}</p>
+                                            <p className="left-price" >￥{goods.price}</p>
+                                        </div>
+                                        <div className="down-area">已售{goods.sales_volume}份</div>
+                                    </div>
+                                    <div className="product-attrs">
+                                        &nbsp; &nbsp;&nbsp;·&nbsp;产地中国  &nbsp; &nbsp;&nbsp;·&nbsp;次日达  &nbsp; &nbsp;&nbsp;·&nbsp;实付满69包邮
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+
+                }
+
 
             </div>
-            <div className="product-describe">
-                <p className="subtitle-text">凹凸间隙中满满都是质感</p>
-                <p className="sub-title">【6包】维达棉韧压花抽纸110抽</p>
-                <div className="product-item-price">
-                    <div className="price-left">
-                        <p className="up-price" style={{ color: '#ff4891' }}>￥29.8</p>
-                        <p className="left-price" >￥15.9</p>
-                    </div>
-                    <div className="down-area">已售2185份</div>
-                </div>
-                <div className="product-attrs">
-                    &nbsp; &nbsp;&nbsp;·&nbsp;产地中国  &nbsp; &nbsp;&nbsp;·&nbsp;次日达  &nbsp; &nbsp;&nbsp;·&nbsp;实付满69包邮
-                </div>
-            </div>
+
             <div className="product-share-info">
                 <div className="product-redpack">
                     <img className="product-redpack-img" src={require('../static/image/img_20171029215450695.png')}></img>
@@ -76,7 +127,7 @@ class Goods extends Component {
                                 <img src=""></img>
                             </p>
                             <ul className="commodity-details">
-                                <li description-info="这款纸是维达新出的一款立体压花抽纸，质量跟之前的系列一样，但是纸张更加立体好看" class="list-item"><p class="list-item-text">这款纸是维达新出的一款立体压花抽纸，质量跟之前的系列一样，但是纸张更加立体好看</p>
+                                <li description-info="这款纸是维达新出的一款立体压花抽纸，质量跟之前的系列一样，但是纸张更加立体好看" className="list-item"><p className="list-item-text">这款纸是维达新出的一款立体压花抽纸，质量跟之前的系列一样，但是纸张更加立体好看</p>
                                 </li>
                                 <li description-info="维达家的纸都不用多说了，通过欧盟食品级检测，可以直接包裹食物，加工时不含可迁移性荧光增白剂，温和亲肤，用起来不刺激，感冒了擦鼻子，经常擦鼻子也不会红" className="list-item"><p className="list-item-text">维达家的纸都不用多说了，通过欧盟食品级检测，可以直接包裹食物，加工时不含可迁移性荧光增白剂，温和亲肤，用起来不刺激，感冒了擦鼻子，经常擦鼻子也不会红</p>
                                 </li>
@@ -113,5 +164,5 @@ class Goods extends Component {
     }
 
 }
-
+Goods = withAxios(Goods);
 export default Goods;

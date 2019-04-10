@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import withAxios from './hoc/withAxios';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -15,6 +15,7 @@ import { Route, Redirect, Switch, Link, NavLink, withRouter } from 'react-router
 // import './static/js/rem';
 class App extends Component {
   render() {
+    // console.log('app:', this);
     return (
       <div className="App">
         <Switch>
@@ -28,4 +29,5 @@ class App extends Component {
   }
 }
 App = withRouter(App);
+App = withAxios(App);
 export default App;

@@ -103,7 +103,7 @@ p{margin: 0}
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 0.38rem;
+    font-size: 0.25rem;
     color: #474346;
     /* line-height:1rem; */
 }
@@ -133,8 +133,11 @@ margin-top: .133333rem;
     width: .8rem;
     height:.8rem;
     position: absolute;
-    top:1.6rem;
-    right: 0rem;
+    top: 1.8rem;
+    left: 6.4rem;
+}
+.bigbox{
+    position: relative;
 }
 /* .card-container > .ant-tabs-card > .ant-tabs-content {
     height: 120px;

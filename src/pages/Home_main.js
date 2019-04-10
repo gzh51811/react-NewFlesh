@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import withAxios from '../hoc/withAxios';
 // import { Checkbox } from 'zent'
 // import 'zent/css/index.css'
 
@@ -9,6 +9,7 @@ import '../css/home_main.scss';
 import Home_tab from '../component/home_main/Home_tab.js'
 class Home_main extends Component {
     render() {
+        console.log(this);
         return (
             <div className="home_main">
                 <div className="home_header">
@@ -19,8 +20,8 @@ class Home_main extends Component {
                     </a>
                 </div>
 
-                <nav>
-                    <Home_tab> </Home_tab>
+                <nav style={{ overflow: "auto" }}>
+                    <Home_tab mane={this.props}> </Home_tab>
                 </nav>
 
 
@@ -31,4 +32,5 @@ class Home_main extends Component {
 }
 
 // Home_main = withRouter(Home_main)
+Home_main = withAxios(Home_main);
 export default Home_main;

@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import '../../css/home_tab.scss';
 import { Tabs, Radio } from 'antd';
 import Home_main_goodslist from './Home_main_goodslist.js'
+import withAxios from '../../hoc/withAxios';
 // import Hot from "../Hot";
 
 const TabPane = Tabs.TabPane;
 
 class Home_tab extends Component {
-    render() {
+
+    render(props) {
+        console.log(this.props);
         return (
 
 
@@ -78,7 +81,7 @@ class Home_tab extends Component {
                         </section>
                         <div className="all-products-wrap" ></div>
                         {/* <Hot></Hot> */}
-                        <Home_main_goodslist></Home_main_goodslist>
+                        <Home_main_goodslist mane={this.props}></Home_main_goodslist>
                     </TabPane>
                     <TabPane tab="会员精选" key="2">
                         <div className="banner-img" style={{ height: "2.186667rem", width: "100%" }}><img src="https://j-image.missfresh.cn/mis_img_20190405005626706.jpg?mryxw=1125&amp;mryxh=246" className="image-view divider-banner" style={{ height: "100%", width: "100%" }} ></img>
@@ -87,12 +90,12 @@ class Home_tab extends Component {
                     <TabPane tab="水果" key="3">Content of tab 3</TabPane>
                     <TabPane tab="蔬菜" key="4">Content of tab 4</TabPane>
                     <TabPane tab="肉蛋" key="5">Content of tab 5</TabPane>
-                    <TabPane tab="Tab 6" key="6">Content of tab 6</TabPane>
-                    <TabPane tab="Tab 7" key="7">Content of tab 7</TabPane>
-                    <TabPane tab="Tab 8" key="8">Content of tab 8</TabPane>
-                    <TabPane tab="Tab 9" key="9">Content of tab 9</TabPane>
-                    <TabPane tab="Tab 10" key="10">Content of tab 10</TabPane>
-                    <TabPane tab="Tab 11" key="11">Content of tab 11</TabPane>
+                    <TabPane tab="水产" key="6">Content of tab 6</TabPane>
+                    <TabPane tab="乳品" key="7">Content of tab 7</TabPane>
+                    <TabPane tab="零食" key="8">Content of tab 8</TabPane>
+                    <TabPane tab="饮酒" key="9">Content of tab 9</TabPane>
+                    <TabPane tab="轻食" key="10">Content of tab 10</TabPane>
+                    <TabPane tab="速食" key="11">Content of tab 11</TabPane>
                 </Tabs>
             </div >
         )
@@ -100,5 +103,5 @@ class Home_tab extends Component {
 }
 
 
-
+Home_tab = withAxios(Home_tab);
 export default Home_tab;

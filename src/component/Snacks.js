@@ -1,24 +1,22 @@
+
 import React, { Component } from 'react';
 import withAxios from '../hoc/withAxios';
 // @withAxios
-class Hot extends Component {
-
-    constructor(porps) {
-        super(porps);
-        // console.log(porps);
+class Snacks extends Component {
+    constructor() {
+        super();
         this.state = {
             datalist: []
         }
-        // console.log('22', this)
+
         this.gotoGoods = this.gotoGoods.bind(this);
     }
     // console.log(this)
     async componentDidMount() {
         // 使用axios
-        // console.log('22', this)
         let { data } = await this.props.axios.get('/goodslist/category', {
             params: {
-                catagory: '酒饮',
+                catagory: '零食',
                 act: 'goods',
                 op: 'goods_list',
                 keyword: '',
@@ -28,7 +26,7 @@ class Hot extends Component {
             }
         });
 
-        console.log(data.data);
+        // console.log(data.data);
 
 
         this.setState({
@@ -37,8 +35,6 @@ class Hot extends Component {
 
 
     }
-
-
     gotoGoods(id) {
 
         // console.log(this.props)
@@ -54,11 +50,9 @@ class Hot extends Component {
             // }
         })
     }
-    render(props) {
-        // console.log('hot', props.datalist)
-
+    render() {
         return (<div>
-            <p className="category-title" >今日秒杀</p>
+            <p className="category-title" >本周新上</p>
 
             <p className="line"></p>
             <div className="goodslist ">
@@ -66,13 +60,11 @@ class Hot extends Component {
                 <div className="somelist " >
                     {
                         this.state.datalist.map(goods => {
-                            return (<div style={{ overflow: 'hidden', }} key={goods._id} className="bigbox">
+                            return (<div style={{ overflow: 'hidden', }} key={goods._id} className="bigbox" >
                                 <div onClick={this.gotoGoods.bind(this, goods._id)}>
                                     <div className="product-img-wrap">
                                         <img src={require(`../img/imgages/${goods.image}`)} className="product-img"></img>
-                                        <div className="product-promote-tag" >
-                                            限每人2份
-                                    </div>
+
                                     </div>
                                     <div className="product-item-right">
                                         <div className="product-title">{goods.name}</div>
@@ -112,6 +104,5 @@ class Hot extends Component {
 
 }
 
-// Hot = withAxios(Hot);
-Hot = withAxios(Hot);
-export default Hot;
+Snacks = withAxios(Snacks);
+export default Snacks;

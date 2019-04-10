@@ -69,7 +69,7 @@ class Home extends Component {
                 <Route path={"/home/goods"} component={Goods} />
                 <Redirect to='/home/main' />
             </Switch>
-            
+
             <div className="home_navs">
                 {
                     this.state.navs.map(item => <NavLink activeStyle={{ color: '#ff4891' }} to={item.path} key={item.text}>
