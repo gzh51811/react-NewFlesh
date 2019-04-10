@@ -1,57 +1,85 @@
-import React from 'react'
+import React, { Component } from 'react';
+import withAxios from '../../hoc/withAxios';
+
+class Home_main_goodslist extends Component {
+    constructor(props) {
+        super(props);
+        console.log(props);
+        this.state = {
+            datalist: []
+        }
+        // console.log('22', this)
+        this.gotoGoods = this.gotoGoods.bind(this);
+    }
+    // console.log(this)
+    async componentDidMount() {
+        // 使用axios
+        // console.log('22', this)
+        let { data } = await this.props.axios.get('/goodslist/category', {
+            params: {
+                catagory: '酒饮',
+                act: 'goods',
+                op: 'goods_list',
+                keyword: '',
+                page: 10,
+                curpage: 1,
+                // limit: 5
+            }
+        });
+
+        console.log(data.data);
 
 
-function Home_main_goodslist() {
-    return (
-        <div>
-            <div className="banner-img" style={{ width: '100%' }}>
-                <img src="https://j-image.missfresh.cn/mis_img_20190226141252067.jpg?mryxw=750&amp;mryxh=142"
-                    className="image-view divider-banner" style={{ width: '100%' }} />
-            </div>
+        this.setState({
+            datalist: data.data
+        });
+
+
+    }
+
+
+    gotoGoods(id) {
+
+        // console.log(this.props)
+        let { history } = this.props.mane.mane;
+        // pathname: '/goods/' + id,
+        // console.log(history)
+        // history.push('/home/goods');
+        history.push({
+            pathname: '/home/goods',
+            search: '?id=' + id,
+
+        })
+    }
+    render() {
+        return (
 
             <div className="checkitemli">
-                <div >
-                    <img className="imgs" src="https://fms-image.missfresh.cn/02e6b07f9ad64369a25a71179eb49627.jpg?iopcmd=thumbnail&amp;type=4&amp;width=200" />
-                    <div className="conter" >
-                        <p className="p1"> 鸡蛋就都几点男法师打发的</p>
-                        <p className="p2">鸡蛋就都几点男法师打的</p>
-                        <div className="price">
-                            <span style={{ color: 'red', }}>￥99.00</span>
-                        </div>
-                    </div>
-                </div>
-                <img className="cartbtnimg" src={[require('../../static/image/cart1.png')]} />
-            </div>
-            <div className="checkitemli">
-                <div >
-                    <img className="imgs" src="https://fms-image.missfresh.cn/02e6b07f9ad64369a25a71179eb49627.jpg?iopcmd=thumbnail&amp;type=4&amp;width=200" />
-                    <div className="conter" >
-                        <p className="p1"> 鸡蛋就都几点男法师打发的</p>
-                        <p className="p2">鸡蛋就都几点男法师打的</p>
-                        <div className="price">
-                            <span style={{ color: 'red', }}>￥99.00</span>
-                        </div>
-                    </div>
-                </div>
-                <img className="cartbtnimg" src={[require('../../static/image/cart1.png')]} />
-            </div>
-            <div className="checkitemli">
-                <div >
-                    <img className="imgs" src="https://fms-image.missfresh.cn/02e6b07f9ad64369a25a71179eb49627.jpg?iopcmd=thumbnail&amp;type=4&amp;width=200" />
-                    <div className="conter" >
-                        <p className="p1"> 鸡蛋就都几点男法师打发的</p>
-                        <p className="p2">鸡蛋就都几点男法师打的</p>
-                        <div className="price">
-                            <span style={{ color: 'red', }}>￥99.00</span>
-                        </div>
-                    </div>
-                </div>
-                <img className="cartbtnimg" src={[require('../../static/image/cart1.png')]} />
+                {
+                    this.state.datalist.map(goods => {
+                        // console.log(goods._id);
+                        return (<div className="box1" key={goods._id}>
+                            <div className="box2" onClick={this.gotoGoods.bind(this, goods._id)}>
+                                <img className="imgs" src={require(`../../img/imgages/${goods.image}`)} />
+                                <div className="conter" >
+                                    <p className="p1"> {goods.name}</p>
+                                    <p className="p2">{goods.subtitle}</p>
+                                    <div className="price">
+                                        <span style={{ color: 'red', }}>￥{goods.price}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="product-ctrl1">
+                                <img src={require('../../static/image/new-cart.a16f026.png')} className="product-addcart-img1"></img>
+                            </div>
+                        </div >)
+                    })
+                }
+
             </div>
 
-        </div>
-
-    )
+        )
+    }
 }
-
-export default Home_main_goodslist
+Home_main_goodslist = withAxios(Home_main_goodslist);
+export default Home_main_goodslist;

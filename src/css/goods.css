@@ -1,0 +1,277 @@
+.Goods .detailsTitle{
+    height: 1.173333rem;
+    /* background: red; */
+    /* text-align: center; */
+    line-height: 1.173333rem;
+    font-size: .466667rem;
+    color: #ff4891;
+    font-weight: 700;
+    position: relative;
+    box-shadow:0px 8px 18px -15px #ccc;
+}
+.detailsTitle .spxq{
+    line-height: 1.173333rem;
+    width: 1.9rem;
+    height: 100%;
+    position: absolute;
+    border-bottom: #ff4891 solid 0.1055rem;
+    left: 5rem;
+    margin-left: -1.1664rem;
+}
+/* banner */
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 6.64rem;
+    line-height: 6.64rem;
+    background: #364d79;
+    overflow: hidden;
+  }
+  
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
+  /* 内容 */
+.product-describe .subtitle-text{
+    font-size: .485rem;
+    color: #474245;
+    font-weight: 700;
+}
+.product-describe{
+    padding-left: 0.375rem;
+    padding-top: 0.475rem;
+    padding-right: 0.375rem;
+    box-sizing: border-box;
+    /* background: #fff; */
+}  
+.product-describe .sub-title{
+    font-size: .4285rem;
+    color: #474245;
+    padding-bottom: 0.275rem;
+    padding-top: 0.125rem;
+    
+}
+.product-describe .product-item-price {
+    position: relative;
+    /* display: flex; */
+    height: 1.013333rem;
+}
+.product-item-price .left-price{
+  
+  position: absolute;
+  color: #474245;
+   font-size: .43rem;
+}
+.product-item-price .down-area{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #474245;
+    font-size: .36rem;
+}
+.product-describe .product-attrs{
+    margin-top: 0.3575rem;
+    padding: 0.34rem 0;
+    border-top:solid .010333rem #ccc;
+    color: #262626;
+    font-size:.16rem; 
+}
+.product-share-info{
+    margin-bottom: 0.4375rem;
+    background: #fff;
+}
+.product-share-info .product-redpack{
+    background: url(../static/image//product-share-redpacket.e34d940.png);
+    background-size: 100% 100%;
+    border-radius: 0.1875rem;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.675rem 0.4375rem;
+    width: 100%;
+    height: 1.76rem;
+    /* line-height:1.76rem;  */
+    font-size: .39rem;
+    color: #ff4891;
+}
+.product-share-info .product-redpack-img{
+    height: .5rem;
+    margin-left: 0.3375rem;
+    
+}
+.product-share-info .product-redpack i{
+    display: inline-block;
+    width: .565rem;
+    height: .565rem;
+    background: url(../static/image/integral-help-ins.1e2a6de.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    position: relative;
+    top: -0.0625rem;
+    left: -.48rem;
+}
+.product-share-info .share-count{
+    font-size: 0.345rem;
+    color: #969696;
+    margin-left: .905rem;
+}
+.safe-container{
+    background-color: #f8f8f8;
+    padding-top: 0.325rem;
+    padding-bottom: 0.325rem;
+}
+
+    
+
+/* 加入购物车 */
+.product-bar-footer-container{
+    width: 100%;
+    height: 1.226667rem;
+    display: flex;
+    z-index: 4;
+    font-size: 0.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 -0.0625rem 0.0625rem #e5e5e5;
+}
+.image-spot-containerproduct-image-spot{
+    background: #fff;
+    flex: 1;
+    text-align: center;
+    line-height:  1.226667rem;
+}
+.shopping-cart{
+    width: 1.573333rem;
+    flex: 4;
+    background: #ff4891;
+    color: #fff;
+    text-align: center;
+    line-height:1.226667rem;
+}
+.icon-cart{
+    line-height: 1.326667rem;
+}
+/* ====== */
+.security {
+    padding: 0 0.3375rem;
+    padding-top: 0.55rem;
+    background-color: #ffffff;
+}
+.security-tit .security-tit-title{
+    font-size: .45rem;
+    color: #474245;
+    line-height: 0.45rem;
+}
+.security-tit .security-tit-see{
+    font-size: 0.3rem;
+    color: #969696;
+    line-height: 0.3rem;
+    margin-left: 5.933333rem;
+}
+.security-item img{
+   width: .8rem;
+   height: .8rem;
+}
+.security-item{
+    display: inline-block;
+    min-width: 25%;
+    text-align: center;
+}
+/* 评论 */
+.buyer-area {
+    margin: 1.066667rem .266667rem 0;
+    padding:.16rem;
+    box-sizing: border-box;
+}
+.buyer-area .buyer-area-person {
+    box-shadow: 0 0.125rem 0.5rem 0 #E7E7E7;
+    border-radius: 0.375rem;
+    padding: .4rem;
+    margin-bottom: .266667rem;
+    position: relative;
+}
+.flexbox{
+    margin-top: -1.066667rem;
+    display:flex;
+    overflow:hidden;
+}
+.flexbox .buyer-area-person-icon img{
+    width: 1.653333rem;
+    height: 1.653333rem;
+}
+.buyer-area-person-des{
+    flex: 1;
+    width: 70%;
+    padding-top: .053333rem;
+}
+.buyer-area .buyer-area-person .buyer-area-person-tip {
+    position: absolute;
+    top: -0.125rem;
+    right: 0.375rem;
+    width: 1.333333rem;
+    height: .666667rem;
+    background: url(//static-as.missfresh.cn/frontend/item/static/img/buyer-area-person-icon.040efbd.png) no-repeat;
+    background-size: 100% 100%;
+}
+.buyer-area .buyer-area-person .buyer-area-person-des h3 {
+    margin-top: 0.8125rem;
+    height: .586667rem;
+    font-size: .5rem;
+    color: #474245;
+    line-height: .586667rem;
+    margin-bottom: .053333rem;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
+.buyer-person-des{
+    margin-top: .266667rem;
+}
+.buyer-person-des p{
+    color: #474245;
+    line-height: 0.5rem;
+    font-size: 0.4rem;
+}
+.product-buyer{
+    margin-top: .533333rem;
+}
+.commodity-details{margin: 0 .2667rem;}
+.buyer-description {
+    background-color: #F5F5F5;
+    padding-bottom: 0.75rem;}
+  .commodity-details  .list-item{    margin-top: 0.2rem;
+    position: relative}
+    .buyer-description .commodity-details .list-item .list-item-text{
+        width: 100%;
+    line-height: .4625rem;
+    display: inline-block;
+    font-size: 0.375rem;
+    color: #474245
+    } 
+.graphic-details-container{
+    background: #ffffff;
+    margin: .266667rem .266667rem 0;
+    padding: .16rem;
+}      
+.image-text{
+    padding-left:.08rem;
+    text-align: left;
+    color: #474245;
+    font-size: .625rem;
+}
+.list-container{
+    padding: .266667rem .08rem;
+}
+.list-container .list-item {
+    color: #262626;
+    font-size: .16rem;
+    line-height: 1.066667rem;
+}
+.list-container .list-item-text{
+    line-height: 1.0625rem;
+    width: 100%;
+    display: inline-block;
+    font-size: 0.375rem;
+    /* color: #474245; */
+}
