@@ -17,15 +17,7 @@ class Home_main extends Component {
                     </a>
                 </div>
 
-                {/* {小导航} */}
-                <section className="minnav">
-                    <ul>
-                        <li>画册</li>
-                        <li>画册</li>
-                        <li>画册</li>
-                        <li>画册</li>
-                    </ul>
-                </section>
+
 
 
                 {/* 保障 */}

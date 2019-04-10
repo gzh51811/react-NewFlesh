@@ -66,7 +66,9 @@ class Home extends Component{
                 {
                     this.state.navs.map(item=><NavLink activeStyle={{color:'#ff4891'}} to={item.path} key={item.text}>
                     {
-                        this.props.location.pathname === item.path ? <img src={item.src2} alt=""/> : <img src={item.src} alt=""/>   
+                        this.props.location.pathname === item.path ? 
+                        <img src={item.src2} alt=""/> : 
+                        <img src={item.src} alt=""/>   
                     }
                         {/* <img src={item[this.state.current]} alt=""/> */}
                         <p>{item.text}</p>

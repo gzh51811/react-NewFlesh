@@ -51,22 +51,22 @@ class Home_mine extends Component {
                 </div>
 
                 {/* 轮播 */}
-                {/* <div className="activitiesp">
+                <div className="activitiesp">
                     <div className="activities-list ">
-                        <div class="activities-item">
-                            <img data-v-77e4bdfe="" src="https://j-image.missfresh.cn/img_20190226163440502.png" class="activities-img" />
+                        <div className="activities-item">
+                            <img data-v-77e4bdfe="" src="https://j-image.missfresh.cn/img_20190226163440502.png" className="activities-img" />
                         </div>
-                        <div class="activities-item">
-                            <img data-v-77e4bdfe="" src="https://j-image.missfresh.cn/img_20190310225020485.png" class="activities-img"></img>
+                        <div className="activities-item">
+                            <img data-v-77e4bdfe="" src="https://j-image.missfresh.cn/img_20190310225020485.png" className="activities-img"></img>
                         </div>
-                        <div class="activities-item">
-                            <img data-v-77e4bdfe="" src="https://j-image.missfresh.cn/img_20190325000313662.jpg" class="activities-img"></img>
+                        <div className="activities-item">
+                            <img data-v-77e4bdfe="" src="https://j-image.missfresh.cn/img_20190325000313662.jpg" className="activities-img"></img>
                         </div>
-                        <div class="activities-item">
-                            <img data-v-77e4bdfe="" src="https://j-image.missfresh.cn/img_20190331235644971.png" class="activities-img"></img>
+                        <div className="activities-item">
+                            <img data-v-77e4bdfe="" src="https://j-image.missfresh.cn/img_20190331235644971.png" className="activities-img"></img>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
 
 
